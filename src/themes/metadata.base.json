@@ -1,7 +1,65 @@
 {
-  "items": [],
-  "baseTheme": "material.orange.light",
+  "items": [
+    {
+        "key": "$base-border-radius",
+        "value": "8px"
+    },
+    {
+        "key": "$base-label-color",
+        "value": "rgba(222, 222, 222, 1)"
+    },
+    {
+        "key": "$base-warning",
+        "value": "rgba(242, 205, 86, 1)"
+    },
+    {
+        "key": "$base-success",
+        "value": "rgba(91, 183, 104, 1)"
+    },
+    {
+        "key": "$base-danger",
+        "value": "rgba(209, 122, 120, 1)"
+    },
+    {
+        "key": "$base-bg",
+        "value": "rgba(44, 48, 52, 1)"
+    },
+    {
+        "key": "$base-text-color",
+        "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+        "key": "$base-icon-color",
+        "value": "rgba(127, 127, 128, 1)"
+    },
+    {
+        "key": "$base-accent",
+        "value": "#FF8636"
+    },
+    {
+        "key": "$button-default-color",
+        "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+        "key": "$base-font-family",
+        "value": "\"OttogiSans\",sans-serif;"
+    },
+    {
+        "key": "$texteditor-border-color",
+        "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+        "key": "$button-normal-border-color",
+        "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+        "key": "$texteditor-bg",
+        "value": "transparent"
+    }
+],
+  "baseTheme": "generic.dark",
   "assetsBasePath": "../../../node_modules/devextreme/dist/css/",
   "outputColorScheme": "base",
   "base": true
 }
+

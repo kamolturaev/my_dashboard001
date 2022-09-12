@@ -4,6 +4,21 @@ export const navigation = [
     path: '/home',
     icon: 'home'
   },
+     {
+      text: 'Home',
+      icon: 'folder',
+      items: [
+      {
+        text: 'Page1',
+        path: '/Page1'
+      },
+      {
+        text: 'Page2',
+        path: '/Page2'
+      },
+     
+    ]
+    },
   {
     text: 'Examples',
     icon: 'folder',
