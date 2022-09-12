@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Login from '../Page2/Login';
+import Pv from '../Page2/Pv';
 
 
 
@@ -28,12 +29,14 @@ export default function Page2() {
     }}>
           
         <Grid item xs={8}>
-         
-          <Login/>
-       
+        <Item>
+            <Login/>
+          </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>xs=4</Item>
+          <Item>
+            <Pv/>
+          </Item>
         </Grid>
         <Grid item xs={4}>
           <Item>xs=4</Item>

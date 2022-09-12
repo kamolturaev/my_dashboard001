@@ -1,54 +1,44 @@
-import React from 'react';
-import { Router, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import Eri from "./Eri";
+import Eee from "./Eee";
 
-import { history } from '../_helpers';
-import { alertActions } from '../_actions';
-import { PrivateRoute } from '../_components';
-import { HomePage } from '../HomePage';
-import { LoginPage } from '../LoginPage';
-import { RegisterPage } from '../RegisterPage';
+import "./styles.css";
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
+const Pv = () => {
+  const [data, setData] = useState([]);
 
-        const { dispatch } = this.props;
-        history.listen((location, action) => {
-            // clear alert on location change
-            dispatch(alertActions.clear());
-        });
+  const createRequests = () => {
+    console.log(data);
+  };
+
+  const worksheets = [
+    {
+      name: "Requests",
+      columns: [
+        { label: "Full Name", value: "name" },
+        { label: "Email", value: "email" },
+        { label: "Template", value: "template" }
+      ],
+      data: [
+        {
+          name: "Bob Ross",
+          email: "boss_ross@gmail.com",
+          template: "Accounts Receivables"
+        }
+      ]
     }
+  ];
+  return (
+    <div>
+      <Eee filename="requests.xlsx" worksheets={worksheets} />
+      <Eri uploadHandler={setData} />
+      <button onClick={createRequests}>Create</button>
+    </div>
+  );
+};
 
-    render() {
-        const { alert } = this.props;
-        return (
-            <div className="jumbotron">
-                <div className="container">
-                    <div className="col-sm-8 col-sm-offset-2">
-                        {alert.message &&
-                            <div className={`alert ${alert.type}`}>{alert.message}</div>
-                        }
-                        <Router history={history}>
-                            <div>
-                                <PrivateRoute exact path="/" component={HomePage} />
-                                <Route path="/login" component={LoginPage} />
-                                <Route path="/register" component={RegisterPage} />
-                            </div>
-                        </Router>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<Pv/>, rootElement);
 
-function mapStateToProps(state) {
-    const { alert } = state;
-    return {
-        alert
-    };
-}
-
-const connectedApp = connect(mapStateToProps)(App);
-export { connectedApp as App }; 
+export default Pv;
