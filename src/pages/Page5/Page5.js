@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
-
+import Signup from './Signup'
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -29,7 +29,7 @@ export default function Page5() {
           
         <Grid item xs={8}>
         <Item>
-           
+           <Signup/>
           </Item>
         </Grid>
         <Grid item xs={4}>

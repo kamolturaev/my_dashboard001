@@ -7,8 +7,8 @@
 
 body{
   background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #073f58, #137f83, #0c7275);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #063f3c, #0f8178, #013638); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #073f58, #0c6366, #087b8f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #063f3c, #094b50, #013638); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
@@ -21,7 +21,7 @@ body{
 }
 
 .register{
-  max-width: 450px;
+  max-width: 650px;
   width: 100vw;
   display:flex;
   border: 1px solid #e9ecef;
