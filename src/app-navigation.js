@@ -19,6 +19,28 @@ export const navigation = [
      
     ]
     },
+    {
+      text: 'Component',
+      icon: 'chart',
+      items: [
+      {
+        text: 'Page3',
+        path: '/Page3'
+      },
+      {
+        text: 'Page4',
+        path: '/Page4'
+      },
+      {
+        text: 'Page5',
+        path: '/Page5'
+      },
+      {
+        text: 'Page6',
+        path: '/Page6'
+      },
+    ]
+    },
   {
     text: 'Examples',
     icon: 'folder',
